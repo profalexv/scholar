@@ -14,30 +14,22 @@ import { q }                                from './utils.js';
 import { loadStoredSession, loginWithCredentials, logout } from './auth.js';
 
 // ── View modules ─────────────────────────────────────────────────────────────
-import { render as renderChamada }       from './modules/chamada.js';
-import { render as renderDiario }        from './modules/diario.js';
-import { render as renderOcorrencias }   from './modules/ocorrencias.js';
-import { render as renderAlunos }        from './modules/alunos.js';
-import { render as renderMatriculas }    from './modules/matriculas.js';
-import { render as renderTransferencias }from './modules/transferencias.js';
-import { render as renderPeriodos }      from './modules/periodos.js';
-import { render as renderAvaliacoes }    from './modules/avaliacoes.js';
-import { render as renderNotas }         from './modules/notas.js';
-import { render as renderBoletins }      from './modules/boletins.js';
-import { render as renderAssinatura }    from './modules/assinatura.js';
+import { render as renderChamada }     from './modules/chamada.js';
+import { render as renderDiario }      from './modules/diario.js';
+import { render as renderOcorrencias } from './modules/ocorrencias.js';
+import { render as renderPeriodos }    from './modules/periodos.js';
+import { render as renderAvaliacoes }  from './modules/avaliacoes.js';
+import { render as renderNotas }       from './modules/notas.js';
+import { render as renderAssinatura }  from './modules/assinatura.js';
 
 const VIEWS = {
-  chamada:        renderChamada,
-  diario:         renderDiario,
-  ocorrencias:    renderOcorrencias,
-  alunos:         renderAlunos,
-  matriculas:     renderMatriculas,
-  transferencias: renderTransferencias,
-  periodos:       renderPeriodos,
-  avaliacoes:     renderAvaliacoes,
-  notas:          renderNotas,
-  boletins:       renderBoletins,
-  assinatura:     renderAssinatura,
+  chamada:     renderChamada,
+  diario:      renderDiario,
+  ocorrencias: renderOcorrencias,
+  periodos:    renderPeriodos,
+  avaliacoes:  renderAvaliacoes,
+  notas:       renderNotas,
+  assinatura:  renderAssinatura,
 };
 
 // ── Router ───────────────────────────────────────────────────────────────────
